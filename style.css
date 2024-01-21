@@ -1,0 +1,57 @@
+/* 
+Tags
+Class name
+id
+ */
+.title {
+  color: aqua;
+}
+.button-styles {
+  cursor: pointer;
+}
+.add-additional-styles {
+  border : 1rem solid black;
+  border-radius: 1rem;
+  background-color: rgb(233, 212, 209);
+  width: fit-content;
+  padding: 2rem;
+  color: tomato;
+}
+
+.shape {
+  border: 0.1rem solid black;
+  /* border-radius: 50%; -> circle*/
+  color: aquamarine;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.p {
+  color: red;
+}
+
+.one {
+  border: 0.1rem solid black;
+  height: 8rem;
+  width: 10rem;
+  padding: 0.5rem;
+}
+
+.two {
+  border: 0.1rem solid black;
+  height: 6rem;
+  width: 8rem;
+  padding: 0.5rem;
+}
+
+.three {
+  border: 0.1rem solid black;
+  height: 4rem;
+  width: 6rem;
+  padding: 0.5rem;
+}
