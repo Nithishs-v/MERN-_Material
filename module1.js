@@ -6,3 +6,4 @@ import {showNumber} from './module2.js'
 
 // Calling the imported function
 showNumber()
+

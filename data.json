@@ -1,0 +1,17 @@
+{
+    "student1" : {
+        "name" : "John",
+        "marks" : 12,
+        "rank" : 3
+    },
+    "student2" : {
+        "name" : "Greg",
+        "marks" : 19,
+        "rank" : 1
+    },
+    "student3" : {
+        "name" : "Smith",
+        "marks" : 15,
+        "rank" : 2
+    }
+}
