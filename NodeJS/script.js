@@ -1,5 +1,7 @@
 const button = document.getElementById('button')
 const loginButton = document.getElementById('login-button')
+const username = document.getElementById('username')
+const password = document.getElementById('password')
 
 button.addEventListener('click', async function() {
     // Sending a request from the client - get request
@@ -16,15 +18,14 @@ loginButton.addEventListener('click', async function() {
     const respObj = await fetch('/verify-user', {
         method : 'POST',
         body : JSON.stringify({
-            "username" : "shri",
-            "password" : 1234
+            "username" : username.value,
+            "password" : password.value
         }),
         headers : {
             Accept : 'application/json',
             'Content-Type' : 'application/json'
         }
     })
-    const data = await respObj
-    .json()
+    const data = await respObj.json()
     console.log(data)
 })

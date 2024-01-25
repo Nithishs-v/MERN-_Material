@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 app.use(express.static(__dirname))
+// bodyParser -> converts body to an understandable form
 app.use(bodyParser.json())
 
 // Capturing the request
@@ -20,14 +21,13 @@ app.get('/get-data', function(request, response) {
 })
 
 app.post('/verify-user', function(request, response) {
-    console.log(request.body)
-    if(request.body.username === 'shri' && request.body.password === 1234) {
+    if(request.body.username === 'shri' && request.body.password === '1234') {
         response.status(200).json({
-            "validation" : "user validated"
+            "status" : "valid user"
         })
     } else {
         response.status(200).json({
-            "validation" : "invalid user"
+            "status" : "invalid user"
         })
     }
 })
